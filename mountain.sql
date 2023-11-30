@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- ホスト: 127.0.0.1
--- 生成日時: 2023-11-30 03:33:01
+-- 生成日時: 2023-11-30 06:10:53
 -- サーバのバージョン： 10.4.28-MariaDB
 -- PHP のバージョン: 8.2.4
 
@@ -50,17 +50,13 @@ INSERT INTO `form_list` (`id`, `name`, `address`, `tel`, `email`, `comment`) VAL
 (10, 'nakano', '大阪市中央区', '12345678901', 'kokjlk@huih', 'fdsdfsfsdfs'),
 (11, 'nakano', '大阪市中央区', '12345678901', 'dfsfd@sdfa', 'ffff'),
 (12, 'nakano', '大阪府富田林市', '12345678901', 'kokjlk@huih', 'fffff'),
-(13, '', '', NULL, NULL, NULL),
-(14, 'nakano', '大阪市中央区', NULL, NULL, NULL),
 (15, 'nakano', '大阪市中央区', NULL, NULL, NULL),
-(16, 'nakano', '大阪府富田林市', NULL, NULL, NULL),
-(17, '仲野', '大阪市中央区', NULL, NULL, NULL),
-(18, '仲野', '大阪府富田林市', NULL, NULL, NULL),
-(19, '仲野', '大阪府富田林市', NULL, NULL, NULL),
 (20, '仲野', '大阪府富田林市', NULL, NULL, NULL),
 (21, '仲野', '大阪府富田林市', NULL, NULL, NULL),
 (22, 'nakano', '大阪市中央区', '0905907539', 'kokjlk@huih', '2222'),
-(23, 'masamasa', '富田林市東板持町', '12345678901', 'mamama@mamam', '123344444');
+(23, 'masamasa', '富田林市東板持町', '12345678901', 'mamama@mamam', '123344444'),
+(24, 'nakano', '大阪市中央区', '12345678901', 'kokjlk@huih', 'ggg'),
+(25, 'nakano ', '大阪市中央区', '09012222222', 'dfsfd@sdfa', '99999999999999999');
 
 -- --------------------------------------------------------
 
@@ -103,7 +99,7 @@ ALTER TABLE `form_list`
 -- テーブルの AUTO_INCREMENT `form_list`
 --
 ALTER TABLE `form_list`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

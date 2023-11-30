@@ -262,8 +262,29 @@ main{
     margin-bottom: 20px;
 }
 
+form{
+    margin-bottom: 10px;
+}
+.comment_up{
+    margin-top: 20px;
+    width: 100%;
+}
 
-
+.comment_box tr{
+    display: flex;
+    margin: 2px;
+    border-bottom: 1px solid #000;
+}
+.comment_box th{
+    width: 150px;
+    padding: 2px;
+    margin-right: 2px;
+}
+.comment_box td{
+    width: 200px;
+    padding: 2px;
+    margin-right: 10px;
+}
 
 
 /*フッター固定*/
