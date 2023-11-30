@@ -114,8 +114,14 @@ try {
         }else {
         echo "入力文字 ：".$name;
         }
-    
     ?>
+        <div class="comment_up">
+            <h2>コメント表示</h2>
+            <button class="update">更新</button>
+            <div class="result">
+                <!--　ここにコメントを表示させる -->
+            </div>
+        <div>
     </main>
 
     <footer class="footer">
@@ -123,6 +129,7 @@ try {
     </footer>
 </div>
 
+<script src="js/update.js"></script>
 <script src="js/validation.js"></script>
 </body>
 </html>
