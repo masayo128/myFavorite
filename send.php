@@ -109,7 +109,7 @@ try {
         echo "<td>" . $row['email'] . "</td>";
         echo "<td>" . $row['comment'] . "</td>";
         echo "<td>";
-        echo "<form method='post'>";
+        echo "<form method='post' onsubmit='return confirmDelete()'>";
         echo "<input type='hidden' name='delete' value='" . $row['id'] . "'>";
         echo "<input type='submit' value='削除'>";
         echo "</form>";
@@ -119,7 +119,7 @@ try {
     echo "</table>";
     
     // "全データ削除" ボタン
-    echo "<form method='post'>";
+    echo "<form method='post' onsubmit='return confirmDelete()'>";
     echo "<input type='hidden' name='deleteAll' value='1'>";
     echo "<input type='submit' value='全データ削除'>";
     echo "</form>";
@@ -135,5 +135,11 @@ try {
     <p>
         <input type="button" onclick="location.href='form.php'" value="お問い合わせフォームへ戻る">
     </p>
+
+    <script>
+        function confirmDelete() {
+            return confirm("本当に全データを削除しますか？");
+        }
+    </script>
 </body>
 </html>
