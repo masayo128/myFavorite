@@ -111,6 +111,15 @@
      */
     #handleSubmit(e) {
       this.#formElms.forEach((formElm) => this.#validateTargetInput(formElm));
+
+      // 空白の入力がある場合はアラートを表示
+      const isEmptyField = this.#formElms.some((formElm) => formElm.value.trim() === '');
+      if (isEmptyField) {
+          alert('入力項目をすべて入力してください。');
+          e.preventDefault(); // 送信を中止
+          return;
+      }
+      
       const isValid = this.#form.checkValidity();
       if (!isValid) {
         const firstInvalidInput = this.#formElms.find((formElm) => !formElm.validity.valid);

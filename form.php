@@ -72,7 +72,7 @@ try {
             <p class="wrapper" data-wrapper>
                 <label>
                     <span>名前（必須項目）: </span>
-                    <input type="text" name="name">
+                    <input type="text" name="name" required>
                 </label>
                 <span class="errorMessage"></span>
             </p>
@@ -105,16 +105,7 @@ try {
                 <input type="submit" value="送信">
             </p>
         </form>     
-    <?php
-        //empty()関数でチェック
-        $name = @$_POST["name"];
-        if (empty($name)) {
-            echo "データが入力されていません。文字列を入力して「送信」をクリックしてください<br>
-                ※0（ゼロ）は無効です";
-        }else {
-        echo "入力文字 ：".$name;
-        }
-    ?>
+    
         <div class="comment_up">
             <h2>コメント表示</h2>
             <button class="update">更新</button>
